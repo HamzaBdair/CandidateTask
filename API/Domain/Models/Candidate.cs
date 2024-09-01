@@ -12,9 +12,9 @@ namespace API.Domain.Models
         [Required(ErrorMessage = "Email is required.")]    
         public string Email { get; set; }
         public string? PhoneNumber { get; set; }
-        public string? PreferredCallStartTime { get; set; } 
+        public DateTime? PreferredCallStartTime { get; set; } 
         public DateTime? PreferredCallEndTime { get; set; }
-        public DateTime? LinkedInProfileUrl { get; set; }
+        public string? LinkedInProfileUrl { get; set; }
         public string? GitHubProfileUrl { get; set; }
         [Required(ErrorMessage = "Notes is required.")]
         public string Notes { get; set; }
